@@ -11,7 +11,7 @@ class Freecam < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/joennespreuwers/freecam/releases/download/v1.0.0/freecam_1.0.0_darwin_amd64.tar.gz"
-    sha256 "c82a0f3221a272e7298d6344566014f099ff17266adea0d327715fd0950e406b"
+    sha256 "ff50e8ea3032b3e1db26c6d397b4fdd91affa075e8626ff3685dd40cd3152e1a"
 
     define_method(:install) do
       bin.install "freecam"
@@ -19,7 +19,7 @@ class Freecam < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/joennespreuwers/freecam/releases/download/v1.0.0/freecam_1.0.0_darwin_arm64.tar.gz"
-    sha256 "9ab718ae416f684200a0f0f5c772e8f08fc11886131c99e83def72c042ebdc72"
+    sha256 "fd55408e6c6ff96859bb407743724a78780f1e725fb78e4806ebad12bfb7ee99"
 
     define_method(:install) do
       bin.install "freecam"

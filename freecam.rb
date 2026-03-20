@@ -5,21 +5,21 @@
 class Freecam < Formula
   desc "Free your PTP camera (Canon, Nikon, Sony, Fujifilm, Olympus…) from macOS ptpcamera daemon"
   homepage "https://github.com/joennespreuwers/freecam"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/joennespreuwers/freecam/releases/download/v1.0.0/freecam_1.0.0_darwin_amd64.tar.gz"
-    sha256 "c68e2e14055f62a5f83808621672747abcab5e491fab8f6aeffabf589c607ae8"
+    url "https://github.com/joennespreuwers/freecam/releases/download/v1.0.1/freecam_1.0.1_darwin_amd64.tar.gz"
+    sha256 "4e211288a8b60aeaa02dbf724e9d9985a17ce746f4dd86e3d6a40afce404097f"
 
     define_method(:install) do
       bin.install "freecam"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/joennespreuwers/freecam/releases/download/v1.0.0/freecam_1.0.0_darwin_arm64.tar.gz"
-    sha256 "f802afa8d5cbb17f05c6c04a9664718dd1bb31bc33d0bec4bd608c8ad7e53d7e"
+    url "https://github.com/joennespreuwers/freecam/releases/download/v1.0.1/freecam_1.0.1_darwin_arm64.tar.gz"
+    sha256 "82a74a8220bffe42722a6b72fc29eb6b9dbbc74ef2f4b943a8104e8dd84eff50"
 
     define_method(:install) do
       bin.install "freecam"
